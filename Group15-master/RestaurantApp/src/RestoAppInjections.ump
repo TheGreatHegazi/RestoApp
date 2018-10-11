@@ -1,0 +1,10 @@
+ class Reservation { 
+   public Boolean overlaps(Date date, Time time){
+		if (Math.abs(date.getTime() + time.getTime() - this.getDate().getTime() - this.getTime().getTime()) < 2*60*60*1000 ){
+			return true;
+		}
+		else{
+			return false;
+		}	
+	}
+}
